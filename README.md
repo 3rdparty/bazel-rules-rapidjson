@@ -9,6 +9,7 @@ git_repository(
     name = "com_github_3rdparty_bazel_rules_rapidjson",
     commit = "6e735a0b2e7d125c776418b254648ab319289ccf",
     remote = "https://github.com/3rdparty/bazel-rules-rapidjson",
+    shallow_since = "1616434870 -0700",
 )
 
 load("@com_github_3rdparty_bazel_rules_rapidjson//:bazel/rapidjson.bzl", "rapidjson_deps")
