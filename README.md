@@ -7,7 +7,7 @@ load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
 git_repository(
     name = "com_github_3rdparty_bazel_rules_rapidjson",
-    commit = "",
+    commit = "29676731c7b315d2070de86d1109964f40b968df",
     remote = "https://github.com/3rdparty/bazel-rules-rapidjson",
 )
 
