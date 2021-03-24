@@ -12,7 +12,7 @@ git_repository(
     shallow_since = "1616434870 -0700",
 )
 
-load("@com_github_3rdparty_bazel_rules_rapidjson//:bazel/rapidjson.bzl", "rapidjson_deps")
+load("@com_github_3rdparty_bazel_rules_rapidjson//bazel:deps.bzl", "rapidjson_deps")
 
 rapidjson_deps()
 ```
