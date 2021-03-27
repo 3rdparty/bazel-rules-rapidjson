@@ -15,8 +15,8 @@ def repos(external = True, repo_mapping = {}):
     if external and "com_github_3rdparty_bazel_rules_rapidjson" not in native.existing_rules():
         git_repository(
             name = "com_github_3rdparty_bazel_rules_rapidjson",
-            commit = "7297fc7eea8407361abfe1ae608d01f8f952802e",
+            commit = "3b3f64f0efda7fb543b9d3af46ec0226eac12d3c",
             remote = "https://github.com/3rdparty/bazel-rules-rapidjson",
-            shallow_since = "1616861057 -0700",
+            shallow_since = "1616863826 -0700",
             repo_mapping = repo_mapping,
         )
