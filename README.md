@@ -38,4 +38,7 @@ def deps():
 
 5. Repeat the steps starting at (1) at the desired version of this repository that you want to use.
 
+| rapidjson | Copy `bazel/repos.bzl` from: |
+| :-------: | :--------------------------: |
+|  latest   | [4fafa98](https://github.com/3rdparty/bazel-rules-rapidjson/tree/4fafa98f4c38f666b36e42598ff38fdb918babe5) |
 
