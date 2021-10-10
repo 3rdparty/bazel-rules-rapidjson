@@ -10,10 +10,12 @@
 ########################################################################
 
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+load("@bazel_tools//tools/build_defs/repo:utils.bzl", "maybe")
 
 def repos(external = True, repo_mapping = {}):
-    if external and "com_github_3rdparty_bazel_rules_rapidjson" not in native.existing_rules():
-        git_repository(
+    if external:
+        maybe(
+            git_repository,
             name = "com_github_3rdparty_bazel_rules_rapidjson",
             commit = "3b3f64f0efda7fb543b9d3af46ec0226eac12d3c",
             remote = "https://github.com/3rdparty/bazel-rules-rapidjson",
