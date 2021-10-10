@@ -17,8 +17,8 @@ def repos(external = True, repo_mapping = {}):
         maybe(
             git_repository,
             name = "com_github_3rdparty_bazel_rules_rapidjson",
-            commit = "3b3f64f0efda7fb543b9d3af46ec0226eac12d3c",
             remote = "https://github.com/3rdparty/bazel-rules-rapidjson",
-            shallow_since = "1616863826 -0700",
+            commit = "2f16f77354d88fb0fe48758d7791b01b2e85e76f",
+            shallow_since = "1633890789 +0300",
             repo_mapping = repo_mapping,
         )
