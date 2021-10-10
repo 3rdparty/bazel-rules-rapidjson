@@ -19,19 +19,19 @@ rapidjson_deps()
 Or ... to simplify others depending on ***your*** repository, add the following to your `repos.bzl`:
 
 ```bazel
-load("//3rdparty/bazel-rules-rapidjson:repos.bzl", rapidjson="repos")
+load("//3rdparty/bazel-rules-rapidjson:repos.bzl", rapidjson_repos="repos")
 
 def repos():
-    rapidjson()
+    rapidjson_repos()
 ```
 
 And the following to your `deps.bzl`:
 
 ```bazel
-load("@com_github_3rdparty_bazel_rules_rapidjson//bazel:deps.bzl", rapidjson="deps")
+load("@com_github_3rdparty_bazel_rules_rapidjson//bazel:deps.bzl", rapidjson_deps="deps")
 
 def deps():
-    rapidjson()
+    rapidjson_deps()
 ```
 
 4. You can then use `@com_github_tencent_rapidjson//:rapidjson` in your target's `deps`.
